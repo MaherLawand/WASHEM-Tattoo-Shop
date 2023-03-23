@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Condensed:wght@100&family=Nosifer&family=PT+Sans+Narrow&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background:url('products.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y:20% ;
+  color: white;
+}
+#wrap{
+  display: flex;
+  position: fixed;
+  height: fit-content;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: all 300ms ease-in-out;
+  height: 84px;
+}
+.navcolor{
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);  /*box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.6);
+  -moz-box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.6);*/
+}
+.pages{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#wrap >*{
+  height: 100%;
+  width: 8%;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+#logo-contain{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#page-wrap{
+  margin-right: 20px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  gap: 10px;
+}
+#submit-btn{
+  transition: all 300ms ease-in-out;
+  color:white;
+}
+#submit-btn:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.navcolor div{
+  color:white;
+}
+.navcolor i{
+  color:white;
+}
+.show{
+  display: none;
+}
+.booking-form-wrap{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.wrap-of{
+  width:50%;
+  height:70%;
+  
+}
+input{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:1rem;
+}
+.booking-form{
+  margin-top:50px;
+  width: 100%;
+  height: 500px;
+  border:1px solid yellow;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.name-wrap{
+  width: 50%;
+}
+.email-number-wrap{
+  display: flex;
+  justify-content: space-evenly;
+  gap:20px;
+  width: 75%;
+}
+input{
+  width: 97.8%;
+  height:40px;
+  outline:0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
+}
+::placeholder{
+  color:white;
+}
+input:focus::placeholder{
+  color: transparent;
+}
+.date-wrap{
+  display: flex;
+  justify-content: space-evenly;
+  gap:20px;
+  width:75%;
+}
+#date{
+  width:35%;
+}
+#date::before{
+  content:"Pick Date:";
+  left:0;
+}
+
+#options{
+  width:35%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#name{
+  width:100%;
+}
+#email{
+  width:35%;
+}
+#number{
+  width:35%;
+}
+.options{
+  color:white;
+}
+.opt{
+  color:red;
+}
+@media (max-width:770px){
+  #page-wrap{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: -20px;
+      top:84px;
+      height: 100vh;
+      width: 100vw;
+      background-image:linear-gradient(to bottom right, #333333, #121212);
+      transform: translateX(1000px);
+
+  }
+  .showup.now{
+      transform:translateX(0%) !important;        
+  }
+  .show.one{
+      display: flex;
+      align-items: center;
+  }
+  #page-wrap div{
+      color: white;
+  }
+}

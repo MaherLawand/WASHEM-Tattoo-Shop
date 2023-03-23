@@ -1,0 +1,102 @@
+let star1= document.getElementById('star1');
+let star2= document.getElementById('star2');
+let star3= document.getElementById('star3');
+let star4= document.getElementById('star4');
+let star5= document.getElementById('star5');
+let rating = document.getElementById('rating');
+let submit = document.getElementById('submit-btn');
+
+star1.addEventListener('mouseover',()=>{
+    star1.classList.add('star1hover');
+});
+star2.addEventListener('mouseover',()=>{
+    star1.classList.add('star1hover');
+    star2.classList.add('star2hover');
+});
+star3.addEventListener('mouseover',()=>{
+    star1.classList.add('star1hover');
+    star2.classList.add('star2hover');
+    star3.classList.add('star3hover');
+});
+star4.addEventListener('mouseover',()=>{
+    star1.classList.add('star1hover');
+    star2.classList.add('star2hover');
+    star3.classList.add('star3hover');
+    star4.classList.add('star4hover');
+});
+star5.addEventListener('mouseover',()=>{
+    star1.classList.add('star1hover');
+    star2.classList.add('star2hover');
+    star3.classList.add('star3hover');
+    star4.classList.add('star4hover');
+    star5.classList.add('star5hover');
+});
+
+star1.addEventListener('mouseleave',()=>{
+    star1.classList.remove('star1hover');
+})
+star2.addEventListener('mouseleave',()=>{
+    star1.classList.remove('star1hover');
+    star2.classList.remove('star2hover');
+});
+star3.addEventListener('mouseleave',()=>{
+    star1.classList.remove('star1hover');
+    star2.classList.remove('star2hover');
+    star3.classList.remove('star3hover');
+});
+star4.addEventListener('mouseleave',()=>{
+    star1.classList.remove('star1hover');
+    star2.classList.remove('star2hover');
+    star3.classList.remove('star3hover');
+    star4.classList.remove('star4hover');
+});
+star5.addEventListener('mouseleave',()=>{
+    star1.classList.remove('star1hover');
+    star2.classList.remove('star2hover');
+    star3.classList.remove('star3hover');
+    star4.classList.remove('star4hover');
+    star5.classList.remove('star5hover');
+});
+star1.addEventListener('click',()=>{
+    star1.classList.add('star1');
+    star2.classList.remove('star2');
+    star3.classList.remove('star3');
+    star4.classList.remove('star4');
+    star5.classList.remove('star5');
+    rating.value="1";
+});
+star2.addEventListener('click',()=>{
+    star1.classList.add('star1');
+    star2.classList.add('star2');
+    star3.classList.remove('star3');
+    star4.classList.remove('star4');
+    star5.classList.remove('star5');   
+    rating.value="2";
+});
+star3.addEventListener('click',()=>{
+    star1.classList.add('star1');
+    star2.classList.add('star2');
+    star3.classList.add('star3');
+    star4.classList.remove('star4');
+    star5.classList.remove('star5');
+    rating.value="3";
+});
+star4.addEventListener('click',()=>{
+    star1.classList.add('star1');
+    star2.classList.add('star2');
+    star3.classList.add('star3');
+    star4.classList.add('star4');
+    star5.classList.remove('star5');
+    rating.value="4";
+});
+star5.addEventListener('click',()=>{
+    star1.classList.add('star1');
+    star2.classList.add('star2');
+    star3.classList.add('star3');
+    star4.classList.add('star4');
+    star5.classList.add('star5');
+    rating.value="5";
+});
+submit.addEventListener('click',()=>{
+    location.href="#content";
+})

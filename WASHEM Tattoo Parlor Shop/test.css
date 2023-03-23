@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Condensed:wght@100&family=Nosifer&family=PT+Sans+Narrow&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+body{
+    margin: 0;
+  }
+  .wrap-of{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+  }
+  #bg-img{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("shane+banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:45%;
+  }
+  #wrap{
+    display: flex;
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: all 300ms ease-in-out;
+    height: 84px;
+}
+.navcolor{
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /*box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.6);*/
+}
+.pages{
+  cursor: pointer;
+}
+.pages{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#wrap >*{
+    height: 100%;
+    width: 8%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+#logo-contain{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+#logo-contain > div{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#page-wrap{
+    margin-right: 20px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.navcolor div{
+    color:white;
+}
+.navcolor i{
+    color:white;
+}
+.show{
+    display: none;
+}
+.wrap-of-everything{
+  position: relative;
+  height: 100%;
+}
+#moving{
+  opacity: 1;
+  box-sizing: border-box;
+  position: absolute;
+  top:25%;
+  left: 15%;
+  background: rgba(0, 0, 0, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  height: 50%;
+  width: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.buttons{
+  position: absolute;
+  display: flex;
+  height: 15px;
+  width: 300px;
+  top:75%;
+  left: 15%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  
+}
+#button1{
+  box-sizing: border-box;
+  border: 1px solid white;
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+#button2{
+  box-sizing: border-box;
+  border: 1px solid white;
+  width: 50px;
+  height: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.descs{
+  font-family: 'PT Sans Narrow', sans-serif;
+  transition: opacity 500ms ease-in-out;
+  
+}
+.btns{
+  transition: background-color 500ms ease-in-out;
+}
+.cards{
+  display: flex;
+  width: 80%;
+  height: fit-content;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -250px;
+  left: 50px;
+  justify-content: flex-end;
+  gap: 50px;
+}
+#booking{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  height: 300px;
+  width: 200px;
+  transition: all 300ms ease-in-out;
+}
+#booking > h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.9rem;
+    transform: translateY(-15px);
+}
+#booking:hover{
+  transform: translateY(-30%);
+}
+#book-btn{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: large;
+  color: white;
+  width: 60%;
+  height: 35px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  font-family: 'PT Sans Narrow', sans-serif;
+
+}
+#book-btn:hover{
+  background-color: white;
+  color: black;
+}
+#reviews{
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  height: 300px;
+  width: 200px;
+  transition: all 300ms ease-in-out;
+}
+#reviews > h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.9rem;
+  transform: translateY(-15px);
+}
+#reviews:hover{
+  transform: translateY(-30%);
+}
+#reviews-btn{
+  background-color: transparent;
+  border:1px solid white;
+  border-radius: 10px;
+  font-size: large;
+  color: white;
+  width: 60%;
+  height: 35px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  font-family: 'PT Sans Narrow', sans-serif;
+
+}
+#reviews-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+@media (max-width:770px){
+    body{
+        position: relative;
+    }
+    .showup{
+        opacity: 0;
+        transform: translateX(1000px);
+        transform: opacity 300ms ease 300ms;
+    }
+    #page-wrap{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: -20px;
+        top:84px;
+        height: 100vh;
+        width: 100vw;
+        background-image:linear-gradient(to bottom right, #333333, #121212);
+        
+
+    }
+    .showup.now{
+        opacity: 1;
+        transform:translateX(0%) !important;        
+    }
+    .show.one{
+        display: flex;
+        align-items: center;
+    }
+    #page-wrap div{
+        color: white;
+    }
+}

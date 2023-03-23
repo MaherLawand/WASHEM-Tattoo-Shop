@@ -1,0 +1,21 @@
+CREATE TABLE review (
+	user_id INT(50) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(256) NOT NULL,
+	last_name VARCHAR(256) NOT NULL,
+	user_email VARCHAR(256) NOT NULL,
+	user_review VARCHAR(256) NOT NULL,
+    user_rating INT(5) NOT NULL
+);
+
+
+
+
+
+CREATE TABLE contact (
+	user_id INT(50) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	user_fullname VARCHAR(256) NOT NULL,
+	user_email VARCHAR(256) NOT NULL,
+	user_phonenumber VARCHAR(12) NOT NULL,
+    user_image LONGBLOB NOT NULL,
+    user_message VARCHAR(256) NOT NULL
+);
